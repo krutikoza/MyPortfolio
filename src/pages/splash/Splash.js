@@ -12,7 +12,7 @@ function AnimatedSplash(props) {
         <div class="ball"></div>
         <div class="ball"></div>
         <div class="ball"></div>
-        <div class="ball"></div>
+        {/* <div class="ball"></div> */}
       </div>
     </div>
   );
@@ -20,12 +20,14 @@ function AnimatedSplash(props) {
 
 function Splash(props) {
   const [redirect, setRedirect] = useState(false);
-  setTimeout(() => setRedirect(true), 2000);
+  setTimeout(() => setRedirect(true), 3000);
 
   return redirect ? (
     <Redirect to="/home" />
   ) : (
-    <AnimatedSplash theme={props.theme} />
+    <>
+      <AnimatedSplash theme={props.theme} />
+    </>
   );
 }
 

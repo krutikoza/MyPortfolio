@@ -9,7 +9,7 @@ function Certifications(props) {
   return (
     <div className="main" id="certs">
       <div className="certs-header-div">
-        <Fade bottom duration={2000} distance="20px">
+        <Fade bottom duration={800} distance="20px">
           <h1 className="certs-header" style={{ color: theme.text }}>
             Certifications
           </h1>

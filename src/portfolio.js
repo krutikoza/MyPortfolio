@@ -10,38 +10,35 @@ const settings = {
 //Home Page
 const greeting = {
   title: "Hello 👋.",
-  title2: "Harikrushn",
-  logo_name: "harry.k()",
+  title2: "Krutik",
+  logo_name: "ka.oza()",
   nickname: "harry / picleric",
-  full_name: "Harikrushn Kanani",
+  full_name: "Krutik Oza",
   subTitle: "Full Stack Developer, Open Source Enthusiast 🔥. Always learning.",
   resumeLink:
     "https://docs.google.com/document/d/1A_jWRG74Rst427tg1izLa6vRXclS9_9F856jWJPJlDY/edit?usp=sharing",
-  mail: "mailto:hkanani191@gmail.com",
+  mail: "mailto:ozakrutik@gmail.com",
 };
 
 const socialMediaLinks = {
   /* Your Social Media Link */
-  github: "https://github.com/harikanani",
-  linkedin: "https://www.linkedin.com/in/harikrushn-kanani/",
-  gmail: "hkanani191@gmail.com",
-  gitlab: "https://gitlab.com/harikanani",
-  facebook: "https://www.facebook.com/harikrishan.kanani/",
-  twitter: "https://twitter.com/Harikrushn9",
-  instagram: "https://www.instagram.com/hari_kanani_/",
+  github: "https://github.com/krutikoza",
+  linkedin: "https://www.linkedin.com/in/krutik-oza/",
+  gmail: "ozakrutik@gmail.com",
+  instagram: "https://www.instagram.com/krutik.oza/",
 };
 
 const skills = {
   data: [
     {
-      title: "Full Stack Development",
+      title: "Software Development",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications",
-        "⚡ Building responsive website front end using ReactJS",
-        "⚡ Developing mobile applications using Flutter and Android",
-        "⚡ Creating application backend in Node, Express & Flask",
-        "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean",
+        "🌎 Develop highly interactive Front end / User Interfaces for your web and mobile applications",
+        "🌍 Building responsive website front end using ReactJS",
+        "🌏 Developing mobile applications using Flutter and Android",
+        "🌎 Creating application backend in Node, Express & Flask",
+        "🌍 Integration of third party services such as Firebase/ AWS / Digital Ocean",
       ],
       softwareSkills: [
         {
@@ -108,13 +105,13 @@ const skills = {
         //     color: "#DE33A6",
         //   },
         // },
-        {
-          skillName: "Android",
-          fontAwesomeClassname: "simple-icons:android",
-          style: {
-            color: "#3DDC84",
-          },
-        },
+        // {
+        //   skillName: "Android",
+        //   fontAwesomeClassname: "simple-icons:android",
+        //   style: {
+        //     color: "#3DDC84",
+        //   },
+        // },
         {
           skillName: "Java",
           fontAwesomeClassname: "simple-icons:java",
@@ -123,15 +120,15 @@ const skills = {
           },
         },
         {
-          skillName: "Flutter",
-          fontAwesomeClassname: "simple-icons:flutter",
+          skillName: "Spring Boot",
+          fontAwesomeClassname: "simple-icons:spring",
           style: {
-            color: "#02569B",
+            color: "#8BC34A",
           },
         },
         {
-          skillName: "Dart",
-          fontAwesomeClassname: "simple-icons:dart",
+          skillName: "PostgreSQL",
+          fontAwesomeClassname: "simple-icons:postgresql",
           style: {
             color: "#29B0EE",
           },
@@ -151,26 +148,13 @@ const skills = {
           },
         },
         {
-          skillName: "jQuery",
-          fontAwesomeClassname: "simple-icons:jquery",
+          skillName: "dotnet",
+          fontAwesomeClassname: "simple-icons:dotnet",
           style: {
-            color: "#0865A6",
+            color: "#512bd4",
           },
         },
-        {
-          skillName: "Wordpress",
-          fontAwesomeClassname: "simple-icons:wordpress",
-          style: {
-            color: "#207297",
-          },
-        },
-        {
-          skillName: "Apache",
-          fontAwesomeClassname: "simple-icons:apache",
-          style: {
-            color: "#CA1A22",
-          },
-        },
+
         {
           skillName: "Git",
           fontAwesomeClassname: "simple-icons:git",
@@ -274,23 +258,23 @@ const skills = {
 const degrees = {
   degrees: [
     {
-      title: "Shantilal Shah Engineering College",
-      subtitle: "Bachelor in Information Technology",
-      logo_path: "ssec.png",
+      title: "Indiana University - Bloomington",
+      subtitle: "Masters in Computer Science",
+      logo_path: "iub.png",
       alt_name: "SSEC",
       duration: "2021 - Present",
       descriptions: [
-        "⚡ I'm currently pursuing my bachelors in Information Technology.",
+        "⚡ I'm currently pursuing my masters in Computer Science.",
         // "⚡ I have studied core subjects like Data Structures, DBMS, Networking, Security, etc.",
         // "⚡ I have also completed various online courses for Backend , Web , Mobile App Development, etc.",
         // "⚡ I have implemented several projects based on what I've leart under my Computer Engineering course. ",
       ],
-      website_link: "http://www.ssgec.ac.in/",
+      website_link: "https://www.indiana.edu/",
     },
     {
-      title: "Dr. S. & S. S. Ghandhy College Of Engineering & Technology",
+      title: "Gujarat Technological University",
       subtitle: "Diploma in Information Technology",
-      logo_path: "ssgandhy.png",
+      logo_path: "gtu.png",
       alt_name: "SSGC",
       duration: "2018 - 2021",
       descriptions: [
@@ -386,21 +370,21 @@ const certifications = {
 // Experience Page
 const experience = {
   title: "Experience",
-  subtitle: "Work, Internship and Volunteership",
+  subtitle: "Work and Internship",
   description:
-    "I've completed one internship. I've mostly done projects on my own and I am actively looking for internships. I love organizing workshops to share my knowledge with others.",
+    "I've completed two internships. I've done projects on my own and I am actively looking for a Job. I love organizing workshops to share my knowledge with others.",
   header_image_path: "experience.svg",
   sections: [
     {
       title: "Work Experience",
       experiences: [
         {
-          title: "Node.js Backend Developer",
-          company: "Valora Infotech",
-          company_url: "http://valorainfotech.com/",
-          logo_path: "valora.jpg",
-          duration: "Nov 2021 - Present",
-          location: "Surat, Gujarat",
+          title: "Software Developer",
+          company: "OnRule",
+          company_url: "https://www.onrule.com/",
+          logo_path: "onrule.png",
+          duration: "May 2022 - Devember 2022",
+          location: "CA, USA",
           description: `Working on Mob-rule Application and Admin Panel Backend. I have worked on Socket.io,
           Payment Gateway Integration and Microservice Architecture.
           `,
@@ -408,12 +392,12 @@ const experience = {
           color: "#0071C5",
         },
         {
-          title: "Node.js Backend Developer (Intern)",
-          company: "Valora Infotech",
-          company_url: "http://valorainfotech.com/",
-          logo_path: "valora.jpg",
+          title: "Dean's Student Assistant",
+          company: "IUB School Of Public Health",
+          company_url: "https://publichealth.indiana.edu/",
+          logo_path: "iubsph.png",
           duration: "Oct 2020 - Mar 2021",
-          location: "Surat, Gujarat",
+          location: "Bloomington, IN",
           description: `Train, manage and provide guidance to junior software development staff.
           Work closely with the Project Manager and Team Leads on change request functions.
           Develops new and maintains existing applications.
@@ -424,10 +408,10 @@ const experience = {
           color: "#0071C5",
         },
         {
-          title: "Full Stack Developer (Freelancer)",
-          company: "NightOwls",
+          title: "Software Developer",
+          company: "Gujarat Narmada Valley Fertiliser Company",
           company_url: "http://nightowls.company/",
-          logo_path: "nightowls.jpg",
+          logo_path: "gnfc.png",
           duration: "Sep 2020 - Oct 2020",
           location: "Work From Home",
           description: `Work closely with the Client and Team on change request functions.

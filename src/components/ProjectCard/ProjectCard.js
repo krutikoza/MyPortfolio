@@ -16,7 +16,7 @@ export default function ProjectCard({ repo, theme }) {
     boxShadow: "rgba(0, 0, 0, 0.2) 0px 10px 30px -15px",
     padding: "2rem",
     cursor: "pointer",
-    borderRadius: "5px",
+    borderRadius: "10px",
     height: "100%",
     transition: "all 0.2s ease-in-out",
     ":hover": {
@@ -26,7 +26,7 @@ export default function ProjectCard({ repo, theme }) {
 
   return (
     <div>
-      <Fade bottom duration={2000} distance="40px">
+      <Fade bottom duration={800} distance="40px">
         <div
           {...styles}
           key={repo.id}

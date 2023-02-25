@@ -3,13 +3,25 @@ import ExperienceCard from "../../components/experienceCard/ExperienceCard.js";
 import "./ExperienceAccordion.css";
 import { Accordion, Panel } from "baseui/accordion";
 import { DarkTheme, LightTheme, ThemeProvider } from "baseui";
+import { CgBorderAll } from "react-icons/cg";
+
+const OVERRIDES = {
+  Root: {
+    styles: {
+      CgBorderAll: "Radius300",
+    },
+  },
+};
 
 function ExperienceAccordion(props) {
   const theme = props.theme;
 
   return (
     <div className="experience-accord">
-      <ThemeProvider theme={theme.name === "light" ? LightTheme : DarkTheme}>
+      <ThemeProvider
+        theme={theme.name === "light" ? LightTheme : DarkTheme}
+        OVERRIDES={OVERRIDES}
+      >
         <Accordion onChange={({ expanded }) => console.log(expanded)}>
           {props.sections.map((section) => {
             return (

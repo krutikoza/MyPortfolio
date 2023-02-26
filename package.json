@@ -1,8 +1,7 @@
 {
-  "private": true,
-  "name": "personalPortfolio",
+  "private": false,
+  "name": "MyPortfolio",
   "version": "1.0.0",
-  "homepage": "http://harikanani.github.io/PortfolioV2",
   "scripts": {
     "build": "react-scripts build",
     "predeploy": "npm run build",

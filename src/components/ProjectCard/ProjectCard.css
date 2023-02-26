@@ -49,6 +49,7 @@
   letter-spacing: -0.5px;
   overflow: hidden;
   margin: 0px;
+  border-radius: 0%;
 }
 
 .repo-star-svg {

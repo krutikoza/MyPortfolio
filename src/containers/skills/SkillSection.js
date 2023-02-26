@@ -38,7 +38,7 @@ function SkillSection(props) {
                 <Fade right duration={1500}>
                   <SoftwareSkill logos={skill.softwareSkills} />
                 </Fade>
-                <Fade right duration={2000}>
+                <Fade right duration={800}>
                   <div>
                     {skill.skills.map((skillSentence) => {
                       return (
@@ -82,7 +82,7 @@ function SkillSection(props) {
                   </div>
                 </Fade>
               </div>
-              <Fade right duration={2000}>
+              <Fade right duration={800}>
                 <div className="skills-image-div">
                   <GetSkillSvg fileName={skill.fileName} theme={theme} />
                 </div>

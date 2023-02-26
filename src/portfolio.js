@@ -9,12 +9,12 @@ const settings = {
 
 //Home Page
 const greeting = {
-  title: "Hello 👋🏽.",
+  title: "Hello 👋🏼.",
   title2: "Krutik",
   logo_name: "ka.oza()",
   // nickname: "harry / picleric",
   full_name: "Krutik Oza",
-  subTitle: "Full Stack Developer, Open Source Enthusiast 🔥. Always learning.",
+  subTitle: "An Experienced Software Developer👨🏻‍💻.",
   resumeLink:
     "https://docs.google.com/document/d/1-jq5g3avGXX9_poXCixtJZ9gNpBPdyzk/edit?usp=sharing&ouid=117653589659728592053&rtpof=true&sd=true",
   mail: "mailto:ozakrutik@gmail.com",
@@ -34,11 +34,11 @@ const skills = {
       title: "Software Development",
       fileName: "FullStackImg",
       skills: [
-        "🌎 Develop highly interactive Front end / User Interfaces for your web and mobile applications",
-        "🌍 Building responsive website front end using ReactJS",
-        "🌏 Developing mobile applications using Flutter and Android",
-        "🌎 Creating application backend in Node, Express & Flask",
-        "🌍 Integration of third party services such as Firebase/ AWS / Digital Ocean",
+        "🌎 Developing highly interactive and responsive Front end IU using JavaScript React",
+        "🌍 Experience in Full Stack Application development",
+        "🌏 Building backend microservice architecture using Spring Boot.",
+        "🌎 Proficient in creating web backend using .NET",
+        "🌍 Created datamodels and complex SQL queries for PostgreSQL and MS SQL Servers",
       ],
       softwareSkills: [
         {
@@ -156,13 +156,6 @@ const skills = {
         },
 
         {
-          skillName: "Git",
-          fontAwesomeClassname: "simple-icons:git",
-          style: {
-            color: "#E94E32",
-          },
-        },
-        {
           skillName: "C",
           fontAwesomeClassname: "simple-icons:c",
           style: {
@@ -186,12 +179,12 @@ const skills = {
       ],
     },
     {
-      title: "Cloud Infra-Architecture",
+      title: "Software Infra-Architecture",
       fileName: "CloudInfraImg",
       skills: [
         "☀️ Experience working on multiple cloud platforms",
         "☀️ Experience hosting and managing websites",
-        "☀️ Experience with Continuous Integration",
+        "☀️ Experience with Continuous Integration/ Continuous deployment",
       ],
       softwareSkills: [
         {
@@ -202,8 +195,8 @@ const skills = {
           },
         },
         {
-          skillName: "Netlify",
-          fontAwesomeClassname: "simple-icons:netlify",
+          skillName: "Jenkins",
+          fontAwesomeClassname: "logos:jenkins",
           style: {
             color: "#38AFBB",
           },
@@ -223,15 +216,15 @@ const skills = {
           },
         },
         {
-          skillName: "PostgreSQL",
-          fontAwesomeClassname: "simple-icons:postgresql",
+          skillName: "Postman",
+          fontAwesomeClassname: "skill-icons:postman",
           style: {
             color: "#336791",
           },
         },
         {
-          skillName: "MongoDB",
-          fontAwesomeClassname: "simple-icons:mongodb",
+          skillName: "Jira",
+          fontAwesomeClassname: "logos:jira",
           style: {
             color: "#47A248",
           },
@@ -244,10 +237,10 @@ const skills = {
           },
         },
         {
-          skillName: "GitHub Actions",
-          fontAwesomeClassname: "simple-icons:githubactions",
+          skillName: "Git",
+          fontAwesomeClassname: "simple-icons:git",
           style: {
-            color: "#5b77ef",
+            color: "#E94E32",
           },
         },
       ],
@@ -259,21 +252,20 @@ const degrees = {
   degrees: [
     {
       title: "Indiana University - Bloomington",
-      subtitle: "Masters in Computer Science",
+      subtitle: "Master's in Computer Science",
       logo_path: "iub.png",
       alt_name: "IUB",
       duration: "2021 - Present",
       descriptions: [
         "🪐 I'm currently pursuing my masters in Computer Science.",
-        // "⚡ I have studied core subjects like Data Structures, DBMS, Networking, Security, etc.",
-        // "⚡ I have also completed various online courses for Backend , Web , Mobile App Development, etc.",
-        // "⚡ I have implemented several projects based on what I've leart under my Computer Engineering course. ",
+        "🪐 I have studied core subjects Like Computer Vision,Image Processing and Software Engineering",
+        "🪐 I have implemented several projects based on what I've leart under my Computer Science course.",
       ],
       website_link: "https://www.indiana.edu/",
     },
     {
       title: "Gujarat Technological University",
-      subtitle: "Diploma in Information Technology",
+      subtitle: "Batchelor's in Software Engineering",
       logo_path: "gtu.png",
       alt_name: "GTU",
       duration: "2017 - 2021",
@@ -281,7 +273,7 @@ const degrees = {
         // 🌕 🌖 🌗 🌘 🌑 🌒 🌓 🌔
         "🌗 I have studied core subjects like Data Structures, DBMS, Networking, Security, etc.",
         "🌖 I have also completed various online courses for Backend , Web , Mobile App Development, etc.",
-        "🌕 I have implemented several projects based on what I've leart under my Computer Engineering course. ",
+        "🌕 I have implemented several projects based on what I've leart under my Computer Engineering course.",
       ],
       website_link: "https://www.gtu.ac.in/",
     },
@@ -373,7 +365,7 @@ const experience = {
   title: "Experience",
   subtitle: "Work and Internship",
   description:
-    "I've completed two internships. I've done projects on my own and I am actively looking for a Job. I love organizing workshops to share my knowledge with others.",
+    "I've been part of multiple companies as a Software Developer and I enjoy creating innovative solutions for various problems. I am always eager to learn new skills and technologies to improve my performance and deliver high-quality products.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -385,9 +377,10 @@ const experience = {
           company_url: "https://www.onrule.com/",
           logo_path: "onrule.png",
           duration: "May 2022 - Devember 2022",
-          location: "CA, USA",
-          description: `Working on Mob-rule Application and Admin Panel Backend. I have worked on Socket.io,
-          Payment Gateway Integration and Microservice Architecture.
+          location: "Santa Clara, CA",
+          description: `Worked on building an application using Spring Boot, React and PostgreSQL. Optimized API's by implementing pagination and secured the applicaion using Spring Security SAML2.0 authentication. 
+          I successfully led and mentored a team of five developers, using Jira to delegate tasks effectively, offering feedback and support, and facilitating knowledge sharing sessions.
+
           `,
           // "I worked on the Dashboard project which helps users track their activities while using Walo Application. I also worked on Ocean Inventory Application and it's Admin panel Backend as well as on Ocean Inventory Admin Front-end using React and also worked on Walo Admin Backend.",
           color: "#0071C5",
@@ -399,11 +392,8 @@ const experience = {
           logo_path: "iubsph.png",
           duration: "April 2022 - Present",
           location: "Bloomington, IN",
-          description: `Train, manage and provide guidance to junior software development staff.
-          Work closely with the Project Manager and Team Leads on change request functions.
-          Develops new and maintains existing applications.
-          Increased productivity and problem-solving technics by 20%.
-          We primarily used PERN and MERN Stack. 80% of my work was doing backend development and the remaining 20% was DevOps-related tasks.
+          description: `I designed and developed a web application for Dean using C# ASP.NET. The application allows users to perform CRUD operations on online articles and modify their display order. 
+          The application also automates the workflow of sending high-quality research articles to more than 100k readers across the country, improving the work efficiency by ~50%.
           `,
           // "I worked on the Dashboard project which helps users track their activities while using Walo Application. I also worked on Ocean Inventory Application and it's Admin panel Backend as well as on Ocean Inventory Admin Front-end using React and also worked on Walo Admin Backend.",
           color: "#0071C5",
@@ -415,8 +405,9 @@ const experience = {
           logo_path: "gnfc.png",
           duration: "Sep 2020 - Oct 2020",
           location: "Work From Home",
-          description: `Work closely with the Client and Team on change request functions.
-          We Primarily used LAMP Stack. 40% of my work was doing backend development, 30% of my work was designing database schemas, and 30% of my work was on maintain hosting and user traffics on the website.
+          description: `I implemented search functionality for a spring application using Hibernate Search and PostgreSQL query. 
+          I also improved system stability by customizing error handling and unit testing with JUnit. 
+          Additionally, I automated the auction system to reduce human intervention and save ~60% of employees time.
           `,
           color: "#ee3c26",
         },
@@ -510,8 +501,9 @@ const experience = {
 // Projects Page
 const projectsHeader = {
   title: "Projects",
-  description:
-    "My projects make use of a vast variety of latest technology tools. My best experience is to create NodeJS Backend Projects, Python Scripts, and React Project. Below are some of my projects. Note that not all of the mentioned projects are on GitHub yet.",
+  description: `My projects showcase my versatility with the latest technology tools. 
+    I specialize in creating dynamic Java Spring Boot backend projects, crafting efficient Python scripts, and building captivating React front-end projects. 
+    Below are a few examples of my recent work.`,
   avatar_image_path: "projects_image.svg",
 };
 
@@ -521,7 +513,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "krutik.jpg",
     description:
-      "You can contact me at the places mentioned below. I will try to get back to you as fast as I can. ",
+      "Please feel free to contact me using the information below, and I will do my best to respond as quickly as possible.",
   },
   // blogSection: {
   //   title: "Blogs",
@@ -536,27 +528,39 @@ const projects = {
   data: [
     {
       id: "0",
-      name: "YOG4LIFE SOCIAL APP",
-      url: "https://github.com/kevalvavaliya/Yog4Life",
+      name: "Enroute",
+      url: "https://github.com/krutikoza/enroute",
       description:
-        "An app for helping people their healthy life. Yog4Life Has a feed feature which is help to get information from the folks, Yog4Life has an anonymous chat room to get connected with the world.",
+        "A one stop application providing services to deliver packages. This application compares different delivery agents and suggest the best option.",
       languages: [
         {
-          name: "Flutter",
-          iconifyClass: "logos-flutter",
+          name: "HTML",
+          iconifyClass: "vscode-icons:file-type-html",
+        },
+        {
+          name: "CSS3",
+          iconifyClass: "vscode-icons:file-type-css",
+        },
+        {
+          name: "ReactJS",
+          iconifyClass: "logos-react",
         },
         {
           name: "NodeJs",
           iconifyClass: "logos-nodejs",
         },
+        {
+          name: "NodeJs",
+          iconifyClass: "skill-icons:mongodb",
+        },
       ],
     },
     {
       id: "1",
-      name: "BAUDDIK-GEEKS PORTFOLIO",
-      url: "https://github.com/Bauddhik-Geeks/Bauddhik-Geeks.github.io",
+      name: "Answer Extractor",
+      url: "https://github.com/krutikoza/Extracting_Answers",
       description:
-        "Awesome Community Portfolio website for Bauddhik-Geeks community",
+        "I developed a web application that allows users to upload their marked answer sheets and extract their answers by comparing them to the correct answers.",
       languages: [
         {
           name: "HTML5",
@@ -566,85 +570,105 @@ const projects = {
           name: "CSS3",
           iconifyClass: "vscode-icons:file-type-css",
         },
+
         {
           name: "JavaScript",
           iconifyClass: "logos-javascript",
+        },
+        {
+          name: "ReactJS",
+          iconifyClass: "logos-react",
+        },
+        {
+          name: "Python",
+          iconifyClass: "logos-python",
+        },
+        {
+          name: "Spring Boot",
+          iconifyClass: "logos:spring-icon",
         },
       ],
     },
     {
       id: "13",
-      name: "Swag Store",
-      url: "https://github.com/harikanani/e-commerce-frontend",
+      name: "Panorama Simplified",
+      url: "https://github.com/krutikoza/Image-Stitching",
       description:
-        "An E-commerce website built using MERN[Mongo, Express, React, Node] stack and we have also added stripe payment gateway integration [in test mode].",
+        "I designed and developed an application that enables users to seamlessly merge two separate images into a single panorama image.",
       languages: [
-        {
-          name: "HTML5",
-          iconifyClass: "vscode-icons:file-type-html",
-        },
-        {
-          name: "CSS3",
-          iconifyClass: "vscode-icons:file-type-css",
-        },
         {
           name: "ReactJS",
           iconifyClass: "logos-react",
         },
         {
-          name: "NodeJS",
-          iconifyClass: "logos-nodejs",
+          name: "lambda",
+          iconifyClass: "logos:aws-lambda",
+        },
+        {
+          name: "S3",
+          iconifyClass: "logos:aws-s3",
+        },
+        {
+          name: "EC2",
+          iconifyClass: "logos:aws-ec2",
+        },
+        {
+          name: "Python",
+          iconifyClass: "logos-python",
         },
       ],
     },
     {
       id: "2",
-      name: "node-blockchain",
-      url: "https://github.com/harikanani/node-blockchain",
+      name: "Board Game",
+      url: "https://github.com/krutikoza/board_game",
       description:
-        "A simple blockchain and cryptocurrency wallet implemented in Node.js and TypeScript (for learning purposes).",
+        "I developed a system for a board game that can play against human opponents. This system analyze the board, predict the opponent's moves, and make decisions to achieve victory.",
       languages: [
         {
-          name: "NodeJS",
-          iconifyClass: "logos-nodejs",
+          name: "Python",
+          iconifyClass: "logos-python",
         },
         {
-          name: "TypeScript",
-          iconifyClass: "logos-typescript",
+          name: "Spring Boot",
+          iconifyClass: "logos:spring-icon",
+        },
+        {
+          name: "PostgreSQL",
+          iconifyClass: "skill-icons:postgresql-light",
         },
       ],
     },
     {
       id: "3",
-      name: "top-crypto-gainers",
-      url: "https://github.com/harikanani/top-crypto-gainers",
+      name: "Outdoors",
+      url: "https://github.com/Sagar03111997/Outdoor",
       description:
-        "A top high price changed crypto coins wring 24 hoursA sound-classifier webapp made with ReactJS + TensorflowJS.",
+        "I developed a hiking application that displays information on hiking tracks providing a convenient all-in-one solution for hikers to plan and explore new trails.",
       languages: [
         {
-          name: "HTML5",
-          iconifyClass: "vscode-icons:file-type-html",
+          name: "SWIFT",
+          iconifyClass: "vscode-icons:file-type-swift",
         },
         {
-          name: "CSS3",
-          iconifyClass: "vscode-icons:file-type-css",
+          name: "dotnet",
+          iconifyClass: "skill-icons:dotnet",
         },
         {
           name: "JavaScript",
           iconifyClass: "logos-javascript",
         },
         {
-          name: "ReactJS",
-          iconifyClass: "logos-react",
+          name: "MS SQL",
+          iconifyClass: "vscode-icons:file-type-sql",
         },
       ],
     },
     {
       id: "4",
-      name: "personal-portfolio",
-      url: "https://github.com/harikanani/personal-portfolio",
-      description:
-        "A simple command line interface based quiz app to know more about me :).",
+      name: "Personal Portfolio",
+      url: "https://github.com/krutikoza/MyPortfolio",
+      description: `I created a personal portfolio website that allows content updates without the need for coding which simplifies updating portfolio enabling users to showcase their experience.`,
       languages: [
         {
           name: "JavaScript",
@@ -656,214 +680,6 @@ const projects = {
         },
       ],
     },
-    // {
-    //   id: "3",
-    //   name: "Bloggify",
-    //   url: "https://github.com/harikanani/Bloggify",
-    //   description: "A Simple REST API for Blog Application.",
-    //   languages: [
-    //     {
-    //       name: "NodeJS",
-    //       iconifyClass: "logos-nodejs",
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "4",
-    //   name: "Stargazzers",
-    //   url: "https://github.com/harikanani/stargazers",
-    //   description: "An Unofficial API for GitHub Repo Stars Count",
-    //   languages: [
-    //     {
-    //       name: "NodeJs",
-    //       iconifyClass: "logos-nodejs",
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "5",
-    //   name: "harikanani.github.io",
-    //   url: "https://github.com/harikanani/harikanani.github.io",
-    //   description:
-    //     "A Personal Portfolio Website that showcases my work and experience. which is hosted on Github Pages.",
-    //   languages: [
-    //     {
-    //       name: "HTML5",
-    //       iconifyClass: "vscode-icons:file-type-html",
-    //     },
-    //     {
-    //       name: "CSS3",
-    //       iconifyClass: "vscode-icons:file-type-css",
-    //     },
-    //     {
-    //       name: "JavaScript",
-    //       iconifyClass: "logos-javascript",
-    //     },
-    //     {
-    //       name: "SCSS",
-    //       iconifyClass: "vscode-icons:file-type-scss2",
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "6",
-    //   name: "Automate Attendace",
-    //   url: "https://github.com/harikanani/Node_Python",
-    //   description: "Automation of Online Attendance using node js and python",
-    //   languages: [
-    //     {
-    //       name: "JavaScript",
-    //       iconifyClass: "logos-javascript",
-    //     },
-    //     {
-    //       name: "Python",
-    //       iconifyClass: "logos-python",
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "7",
-    //   name: "Automate Discord Bot",
-    //   url: "https://github.com/harikanani/AutomateDiscordBot",
-    //   description:
-    //     "A Discord Bot to send Automatic messages to serer channel in regular time difference.",
-    //   languages: [
-    //     {
-    //       name: "Python",
-    //       iconifyClass: "logos-python",
-    //     },
-    //     {
-    //       name: "Python Selenium",
-    //       iconifyClass: "logos-selenium",
-    //     },
-    //     {
-    //       name: "Chromium Browser",
-    //       iconifyClass: "openmoji-chromium",
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "8",
-    //   name: "Flask Blog",
-    //   url: "https://github.com/harikanani/flask_blog",
-    //   description: "A Simple Blog Web Application made using Flask Framework",
-    //   languages: [
-    //     {
-    //       name: "Python",
-    //       iconifyClass: "logos-python",
-    //     },
-    //     {
-    //       name: "Flask",
-    //       iconifyClass: "cib-flask",
-    //     },
-    //     {
-    //       name: "HTML5",
-    //       iconifyClass: "vscode-icons:file-type-html",
-    //     },
-    //     {
-    //       name: "CSS3",
-    //       iconifyClass: "vscode-icons:file-type-css",
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "9",
-    //   name: "Netflix top series",
-    //   url: "https://github.com/harikanani/netflix-top-series",
-    //   description: "List of Top Netflix Series which is deployed to vercel.",
-    //   languages: [
-    //     {
-    //       name: "JavaScript",
-    //       iconifyClass: "logos-javascript",
-    //     },
-    //     {
-    //       name: "ReactJS",
-    //       iconifyClass: "logos-react",
-    //     },
-    //     {
-    //       name: "HTML5",
-    //       iconifyClass: "logos-html-5",
-    //     },
-    //     {
-    //       name: "CSS3",
-    //       iconifyClass: "logos-css-3",
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "10",
-    //   name: "COVID-19 Tracker",
-    //   url: "https://github.com/harikanani/Covid19TrackerReact",
-    //   description:
-    //     "Simple Covid-19 Tracker made using React and deployed to Vercel.",
-    //   languages: [
-    //     {
-    //       name: "JavaScript",
-    //       iconifyClass: "logos-javascript",
-    //     },
-    //     {
-    //       name: "ReactJS",
-    //       iconifyClass: "logos-react",
-    //     },
-    //     {
-    //       name: "HTML5",
-    //       iconifyClass: "logos-html-5",
-    //     },
-    //     {
-    //       name: "CSS3",
-    //       iconifyClass: "logos-css-3",
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "11",
-    //   name: "Food Order Static Website",
-    //   url: "https://github.com/harikanani/food-order-website",
-    //   description:
-    //     "A simple static website related to food restaurants service. this is reasponsive as well.",
-    //   languages: [
-    //     {
-    //       name: "HTML5",
-    //       iconifyClass: "logos-html-5",
-    //     },
-    //     {
-    //       name: "CSS3",
-    //       iconifyClass: "logos-css-3",
-    //     },
-    //     {
-    //       name: "JavaScript",
-    //       iconifyClass: "logos-javascript",
-    //     },
-    //     {
-    //       name: "PHP",
-    //       iconifyClass: "logos-php",
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "12",
-    //   name: "NFT Launchpad",
-    //   url: "https://deliquescent-cents.000webhostapp.com/",
-    //   description: "NFT Launchpad crypto site portfolio",
-    //   languages: [
-    //     {
-    //       name: "HTML5",
-    //       iconifyClass: "logos-html-5",
-    //     },
-    //     {
-    //       name: "CSS3",
-    //       iconifyClass: "logos-css-3",
-    //     },
-    //     {
-    //       name: "JavaScript",
-    //       iconifyClass: "logos-javascript",
-    //     },
-    //     {
-    //       name: "ReactJS",
-    //       iconifyClass: "logos-react",
-    //     },
-    //   ],
-    // },
   ],
 };
 

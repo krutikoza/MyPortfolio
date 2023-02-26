@@ -3,7 +3,7 @@ import ExperienceCard from "../../components/experienceCard/ExperienceCard.js";
 import "./ExperienceAccordion.css";
 import { Accordion, Panel } from "baseui/accordion";
 import { DarkTheme, LightTheme, ThemeProvider } from "baseui";
-import { CgBorderAll } from "react-icons/cg";
+// import { CgBorderAll } from "react-icons/cg";
 
 const OVERRIDES = {
   Root: {

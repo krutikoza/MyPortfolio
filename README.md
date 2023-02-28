@@ -12,7 +12,7 @@
 
 # How To Use
 
-- Clone this repository (or fork, then clone your fork :) )
+- Clone this repository
 - Run `npm i`
 - Check it out using `npm start`
 
@@ -56,7 +56,3 @@ Now, your website is successfully deployed and you can visit it at `<your-github
 
 - [UnDraw](https://undraw.co/illustrations)
 
-# References
-
-Based on https://github.com/saadpasta/developerFolio
-Illustrations: https://undraw.co/

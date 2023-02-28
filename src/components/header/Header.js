@@ -63,7 +63,7 @@ function Header(props) {
     );
 
   return (
-    <Fade top duration={1000} distance="20px">
+    <Fade top duration={800} distance="20px">
       <div>
         <header className="header">
           <NavLink to={link} tag={Link} className="logo">
@@ -84,7 +84,7 @@ function Header(props) {
                 to="/home"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.text }}
+                style={{ borderRadius: 10, color: theme.text }}
               >
                 Home
               </NavLink>
@@ -95,9 +95,9 @@ function Header(props) {
                 to="/education"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.text }}
+                style={{ borderRadius: 10, color: theme.text }}
               >
-                Education and Certifications
+                Education
               </NavLink>
             </li>
             <li>
@@ -106,9 +106,9 @@ function Header(props) {
                 to="/experience"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.text }}
+                style={{ borderRadius: 10, color: theme.text }}
               >
-                Experience
+                Experiences
               </NavLink>
             </li>
             <li>
@@ -117,7 +117,7 @@ function Header(props) {
                 to="/projects"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.text }}
+                style={{ borderRadius: 10, color: theme.text }}
               >
                 Projects
               </NavLink>
@@ -128,11 +128,22 @@ function Header(props) {
                 to="/contact"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.text }}
+                style={{ borderRadius: 10, color: theme.text }}
               >
-                Contact and Resume
+                Contact
               </NavLink>
             </li>
+            {/* <li>
+              <NavLink
+                className="cr"
+                to="/login"
+                tag={Link}
+                activeStyle={{ fontWeight: "bold" }}
+                style={{ borderRadius: 10, color: theme.text }}
+              >
+                Login
+              </NavLink>
+            </li> */}
             <button {...styles} onClick={changeTheme}>
               {icon}
             </button>

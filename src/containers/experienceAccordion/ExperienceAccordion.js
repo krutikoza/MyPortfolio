@@ -22,7 +22,10 @@ function ExperienceAccordion(props) {
         theme={theme.name === "light" ? LightTheme : DarkTheme}
         OVERRIDES={OVERRIDES}
       >
-        <Accordion onChange={({ expanded }) => console.log(expanded)}>
+        <Accordion
+          expanded={props.sections}
+          onChange={({ expanded }) => console.log(expanded)}
+        >
           {props.sections.map((section) => {
             return (
               <Panel

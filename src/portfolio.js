@@ -12,9 +12,10 @@ const greeting = {
   title: "Hello 👋🏼.",
   title2: "Krutik",
   logo_name: "ka.oza()",
-  // nickname: "harry / picleric",
+  nickname: "KO",
   full_name: "Krutik Oza",
-  subTitle: "An Experienced Software Developer👨🏻‍💻.",
+  subTitle:
+    "An experienced software developer with a proven track record of delivering high-quality software solutions.👨🏻‍💻.",
   resumeLink:
     "https://docs.google.com/document/d/1-jq5g3avGXX9_poXCixtJZ9gNpBPdyzk/edit?usp=sharing&ouid=117653589659728592053&rtpof=true&sd=true",
   mail: "mailto:ozakrutik@gmail.com",
@@ -34,11 +35,11 @@ const skills = {
       title: "Software Development",
       fileName: "FullStackImg",
       skills: [
-        "🌎 Developing highly interactive and responsive Front end IU using JavaScript React",
-        "🌍 Experience in Full Stack Application development",
+        "🌎 Developing highly interactive and responsive Front-end IU using JavaScript and React.",
+        "🌍 Experienced in developing full-stack applications.",
         "🌏 Building backend microservice architecture using Spring Boot.",
-        "🌎 Proficient in creating web backend using .NET",
-        "🌍 Created datamodels and complex SQL queries for PostgreSQL and MS SQL Servers",
+        "🌎 Proficient in creating robust and scalable web backend using .NET.",
+        "🌍 Creating datamodels and complex SQL queries for PostgreSQL and MS SQL Servers.",
       ],
       softwareSkills: [
         {
@@ -98,20 +99,6 @@ const skills = {
             color: "#439743",
           },
         },
-        // {
-        //   skillName: "GraphQL",
-        //   fontAwesomeClassname: "simple-icons:graphql",
-        //   style: {
-        //     color: "#DE33A6",
-        //   },
-        // },
-        // {
-        //   skillName: "Android",
-        //   fontAwesomeClassname: "simple-icons:android",
-        //   style: {
-        //     color: "#3DDC84",
-        //   },
-        // },
         {
           skillName: "Java",
           fontAwesomeClassname: "simple-icons:java",
@@ -133,13 +120,6 @@ const skills = {
             color: "#29B0EE",
           },
         },
-        // {
-        //   skillName: "Visual Basic",
-        //   fontAwesomeClassname: "simple-icons:dot-net",
-        //   style: {
-        //     color: "#029FCE",
-        //   },
-        // },
         {
           skillName: "MySQL",
           fontAwesomeClassname: "simple-icons:mysql",
@@ -182,9 +162,9 @@ const skills = {
       title: "Software Infra-Architecture",
       fileName: "CloudInfraImg",
       skills: [
-        "☀️ Experience working on multiple cloud platforms",
-        "☀️ Experience hosting and managing websites",
-        "☀️ Experience with Continuous Integration/ Continuous deployment",
+        "☀️ Worked with AWS, Azure, and Google Cloud, delivering cloud solutions that met diverse business needs.",
+        "☀️ Managed and hosted websites using Apache HTTP Server, Heroku, and Netlify.",
+        "☀️ Implemented Continuous Integration and Continuous Deployment pipelines using Jenkins and GitLab CI/CD.",
       ],
       softwareSkills: [
         {
@@ -257,9 +237,8 @@ const degrees = {
       alt_name: "IUB",
       duration: "2021 - Present",
       descriptions: [
-        "🪐 I'm currently pursuing my masters in Computer Science.",
-        "🪐 I have studied core subjects Like Computer Vision,Image Processing and Software Engineering",
-        "🪐 I have implemented several projects based on what I've leart under my Computer Science course.",
+        "🪐As a current Master's degree student in Computer Science, I am deeply interested in Software Engineering and machine learning.",
+        "🪐My coursework has allowed me to delve into various core subjects such as Computer Vision, Image Processing, and Software Engineering.",
       ],
       website_link: "https://www.indiana.edu/",
     },
@@ -271,9 +250,8 @@ const degrees = {
       duration: "2017 - 2021",
       descriptions: [
         // 🌕 🌖 🌗 🌘 🌑 🌒 🌓 🌔
-        "🌗 I have studied core subjects like Data Structures, DBMS, Networking, Security, etc.",
-        "🌖 I have also completed various online courses for Backend , Web , Mobile App Development, etc.",
-        "🌕 I have implemented several projects based on what I've leart under my Computer Engineering course.",
+        "🌗 As a Computer Engineering student, I have studied core subjects such as Data Structures and Algorithms, Database Management Systems and Operating System.",
+        "🌘 Implemented several projects which provided me with hands-on experience in designing and developing web-based applications, constructing robust backend systems using technologies such as Node.js and Python, and creating mobile apps.",
       ],
       website_link: "https://www.gtu.ac.in/",
     },
@@ -511,6 +489,14 @@ const projects = {
         {
           name: "NodeJS",
           iconifyClass: "logos-nodejs",
+        },
+        {
+          name: "Spring Boot",
+          iconifyClass: "logos:spring-icon",
+        },
+        {
+          name: "PostgreSQL",
+          iconifyClass: "skill-icons:postgresql-light",
         },
       ],
     },

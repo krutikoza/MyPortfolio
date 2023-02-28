@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Main from "./containers/Main";
 import { ThemeProvider } from "styled-components";
@@ -6,18 +6,9 @@ import { themes } from "./theme";
 import { GlobalStyles } from "./global";
 import AnimatedCursor from "react-animated-cursor";
 import { settings } from "./portfolio";
-import ReactGA from "react-ga";
+// import ReactGA from "react-ga";
 
 function App() {
-  useEffect(() => {
-    if (settings.googleTrackingID) {
-      ReactGA.initialize(settings.googleTrackingID, {
-        testMode: process.env.NODE_ENV === "test",
-      });
-      ReactGA.pageview(window.location.pathname + window.location.search);
-    }
-  }, []);
-
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
   const useCursor = settings.useCustomCursor;
 
@@ -29,7 +20,7 @@ function App() {
           {useCursor ? (
             <>
               <AnimatedCursor
-                innerSize={10}
+                innerSize={8}
                 outerSize={30}
                 color={theme === "dark" ? "219,226,249" : "86,94,113"}
                 outerAlpha={0.4}

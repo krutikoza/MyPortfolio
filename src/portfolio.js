@@ -223,6 +223,13 @@ const skills = {
             color: "#E94E32",
           },
         },
+        {
+          skillName: "GitHub Actions",
+          fontAwesomeClassname: "simple-icons:githubactions",
+          style: {
+            color: "#0065bd",
+          },
+        },
       ],
     },
   ],
@@ -304,7 +311,7 @@ const experience = {
           company: "Gujarat Narmada Valley Fertiliser Company",
           company_url: "https://www.gnfc.in/",
           logo_path: "gnfc.png",
-          duration: "Sep 2020 - Oct 2020",
+          duration: "Feb 2021 - Apr 2021",
           location: "Bharuch, Gujarat, India",
           description: `I implemented search functionality for a spring application using Hibernate Search and PostgreSQL query. 
           I also improved system stability by customizing error handling and unit testing with JUnit. 

@@ -83,6 +83,7 @@
 
 .experience-card-company > a:hover {
   color: #8c8c8c;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .experience-card-company > a:hover:before {

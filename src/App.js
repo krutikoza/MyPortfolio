@@ -9,7 +9,7 @@ import { settings } from "./portfolio";
 // import ReactGA from "react-ga";
 
 function App() {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
   const useCursor = settings.useCustomCursor;
 
   return (

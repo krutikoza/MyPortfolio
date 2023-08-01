@@ -56,6 +56,7 @@ function Projects(props) {
         {...styles}
         className="general-btn"
         href="https://github.com/krutikoza"
+        style={{borderRadius:"100px"}}
       >
         More Projects (Github)
       </a>

@@ -8,7 +8,8 @@ import { DarkTheme, LightTheme, ThemeProvider } from "baseui";
 const OVERRIDES = {
   Root: {
     styles: {
-      CgBorderAll: "Radius300",
+      CgBorderAll: "Radius300px",
+      
     },
   },
 };
@@ -25,6 +26,29 @@ function ExperienceAccordion(props) {
         <Accordion
           expanded={props.sections}
           onChange={({ expanded }) => console.log(expanded)}
+
+
+          overrides={{
+            
+            Header: {
+              style: ({ $theme }) => ({
+                borderRadius: "20px"
+              })
+            },
+            Content: {
+              style: ({ $theme }) => ({
+                borderRadius: "20px"
+              })
+            },
+            PanelContainer: {
+              style: ({ $theme }) => ({
+                borderRadius: "20px"
+              })
+            },
+          }}
+
+
+          
         >
           {props.sections.map((section) => {
             return (
@@ -32,6 +56,9 @@ function ExperienceAccordion(props) {
                 className="accord-panel"
                 title={section["title"]}
                 key={section["title"]}
+
+                
+                
               >
                 {section["experiences"].map((experience) => {
                   return (

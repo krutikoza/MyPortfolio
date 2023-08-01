@@ -15,11 +15,14 @@ function Contact(props) {
   const theme = props.theme;
 
   const styles = style({
+    
     backgroundColor: `${theme.accentBright}`,
     ":hover": {
       boxShadow: `0 5px 15px ${theme.accentBright}`,
     },
-  });
+  },
+
+  );
 
   return (
     <div className="contact-main">
@@ -56,6 +59,7 @@ function Contact(props) {
                 href={greeting.resumeLink}
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{borderRadius:"100px"}}
               >
                 My Resume
               </a>

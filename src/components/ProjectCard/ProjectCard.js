@@ -16,7 +16,7 @@ export default function ProjectCard({ repo, theme }) {
     boxShadow: "rgba(0, 0, 0, 0.2) 0px 10px 30px -15px",
     padding: "2rem",
     cursor: "pointer",
-    borderRadius: "10px",
+    borderRadius: "25px",
     height: "100%",
     transition: "all 0.2s ease-in-out",
     ":hover": {

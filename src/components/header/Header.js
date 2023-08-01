@@ -84,7 +84,7 @@ function Header(props) {
                 to="/home"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 10, color: theme.text }}
+                style={{ borderRadius: 20, color: theme.text }}
               >
                 Home
               </NavLink>
@@ -95,7 +95,7 @@ function Header(props) {
                 to="/education"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 10, color: theme.text }}
+                style={{ borderRadius: 20, color: theme.text }}
               >
                 Education
               </NavLink>
@@ -106,7 +106,7 @@ function Header(props) {
                 to="/experience"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 10, color: theme.text }}
+                style={{ borderRadius: 20, color: theme.text }}
               >
                 Experiences
               </NavLink>
@@ -117,7 +117,7 @@ function Header(props) {
                 to="/projects"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 10, color: theme.text }}
+                style={{ borderRadius: 20, color: theme.text }}
               >
                 Projects
               </NavLink>
@@ -128,7 +128,7 @@ function Header(props) {
                 to="/contact"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 10, color: theme.text }}
+                style={{ borderRadius: 20, color: theme.text }}
               >
                 Contact
               </NavLink>

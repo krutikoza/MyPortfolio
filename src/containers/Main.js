@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch, HashRouter } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "../pages/home/HomeComponent";
 import Splash from "../pages/splash/Splash";
 import Education from "../pages/education/EducationComponent";
@@ -9,156 +9,158 @@ import Projects from "../pages/projects/Projects";
 import { settings } from "../portfolio.js";
 
 export default function Main(propss) {
+  
   if (settings.isSplash) {
     return (
       <div>
-        <HashRouter basename="/">
-          <Switch>
+        {/* <HashRouter basename="/"> */}
+          <Routes>
+          
             <Route
               path="/"
-              exact
-              render={(props) => (
+              
+              element={
                 <Splash
-                  {...props}
+                  {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
                 />
-              )}
+              }
             />
             <Route
               path="/home"
-              render={(props) => (
+              element={
                 <Home
-                  {...props}
+                  {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
                 />
-              )}
+              }
             />
             <Route
               path="/experience"
               exact
-              render={(props) => (
+              element={
                 <Experience
-                  {...props}
+                  {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
                 />
-              )}
+              }
             />
             <Route
               path="/education"
-              render={(props) => (
+              element={
                 <Education
-                  {...props}
+                  {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
                 />
-              )}
+              }
             />
             <Route
               path="/contact"
-              render={(props) => (
+              element={
                 <Contact
-                  {...props}
+                  {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
                 />
-              )}
+              }
             />
             <Route
               path="/splash"
-              render={(props) => (
+              element={
                 <Splash
-                  {...props}
+                  {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
                 />
-              )}
+              }
             />
             <Route
               path="/projects"
-              render={(props) => (
+              element={
                 <Projects
-                  {...props}
+                  {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
                 />
-              )}
+              }
             />
-          </Switch>
-        </HashRouter>
+          </Routes>
+        {/* </HashRouter> */}
       </div>
     );
   } else {
     return (
       <div>
-        <HashRouter basename="/">
-          <Switch>
+        {/* <HashRouter basename="/"> */}
+          <Routes>
             <Route
               path="/"
               exact
-              render={(props) => (
+              element={
                 <Home
-                  {...props}
+                  {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
                 />
-              )}
+              }
             />
             <Route
               path="/home"
-              render={(props) => (
+              element={
                 <Home
-                  {...props}
+                  {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
                 />
-              )}
+              }
             />
             <Route
               path="/experience"
               exact
-              render={(props) => (
+              element={
                 <Experience
-                  {...props}
+                  {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
                 />
-              )}
+              }
             />
             <Route
               path="/education"
-              render={(props) => (
+              element={
                 <Education
-                  {...props}
+                  {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
                 />
-              )}
+              }
             />
             <Route
               path="/contact"
-              render={(props) => (
+              element={
                 <Contact
-                  {...props}
+                  {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
                 />
-              )}
+              }
             />
             <Route
               path="/projects"
-              render={(props) => (
+              element={
                 <Projects
-                  {...props}
+                  {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
                 />
-              )}
+              }
             />
-          </Switch>
-        </HashRouter>
+          </Routes>
+        {/* </HashRouter> */}
       </div>
     );
   }

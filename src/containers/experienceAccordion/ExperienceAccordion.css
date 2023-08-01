@@ -1,6 +1,6 @@
 .experience-accord {
   margin: 50px;
-  /* border-radius: 10px; */
+  border-radius: 20px;
   /* background-color: #1d1d1d; */
   border: 0.1px solid rgba(211, 211, 211, 0.397);
   transition: all 0.2s ease-in-out;
@@ -12,10 +12,12 @@
 }
 
 .accord-panel {
+  
   font-family: "Google Sans Regular";
 }
 
 .accord {
+  
   background-color: black;
 }
 

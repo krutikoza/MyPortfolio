@@ -31,7 +31,7 @@ function DegreeCard(props) {
     borderBottom: `1px solid ${theme.accentColor}`,
     borderLeft: `1px solid ${theme.accentColor}`,
     borderRight: `1px solid ${theme.accentColor}`,
-    borderRadius: "7px",
+    borderRadius: "20px",
     width: "90%",
     margin: "10px",
     boxShadow: `0px 1px 5px ${theme.accentColor}`,
@@ -123,6 +123,7 @@ function DegreeCard(props) {
                   textDecoration: "none",
                   float: "right",
                   backgroundColor: theme.accentColor,
+                  borderRadius: "100px"
                 }}
               >
                 Visit Website

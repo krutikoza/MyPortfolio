@@ -15,6 +15,7 @@ const lightTheme = {
   imageClothes: "#c4bdfb",
   avatarMisc: "#b3a9fa",
   avatarShoes: "#ccd2e3",
+  borderRadius: "20px"
 };
 
 const darkTheme = {
@@ -32,6 +33,7 @@ const darkTheme = {
   imageClothes: "#000000",
   avatarMisc: "#000000",
   avatarShoes: "#2B2B2B",
+  borderRadius: "20px"
 };
 
 export const themes = { light: lightTheme, dark: darkTheme };

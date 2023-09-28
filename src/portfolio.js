@@ -281,43 +281,21 @@ const experience = {
       title: "Work Experience",
       experiences: [
         
-        // {
-        //   title: "Dean's Student Assistant",
-        //   company: "IUB School Of Public Health",
-        //   company_url: "https://publichealth.indiana.edu/",
-        //   logo_path: "iubsph.png",
-        //   duration: "April 2022 - Present",
-        //   location: "Bloomington, IN",
-        //   description: `I designed and developed a web application for Dean using C# ASP.NET. The application allows users to perform CRUD operations on online articles and modify their display order. 
-        //   The application also automates the workflow of sending high-quality research articles to more than 100k readers across the country, improving the work efficiency by ~50%.
-        //   `,
-        //   color: "#990000",
-        // },
-        // {
-        //   title: "Software Developer",
-        //   company: "Gujarat Narmada Valley Fertiliser Company",
-        //   company_url: "https://www.gnfc.in/",
-        //   logo_path: "gnfc.png",
-        //   duration: "Feb 2021 - Apr 2021",
-        //   location: "Bharuch, Gujarat, India",
-        //   description: `I implemented search functionality for a spring application using Hibernate Search and PostgreSQL query. 
-        //   I also improved system stability by customizing error handling and unit testing with JUnit. 
-        //   Additionally, I automated the auction system to reduce human intervention and save ~60% of employees time.
-        //   `,
-        //   color: "#ee3c26",
-        // },
-
         {
           title: "Software Developer",
-          company: "Henry Schein",
-          company_url: "https://www.gnfc.in/",
-          logo_path: "HenrySchein.jpg",
-          duration: "Feb 2023 - June 2023",
-          location: "California, United States",
-          description: `Developed responsive web designs from provided models using HTML5 and CSS3, while employing PL/SQL for data validation and population of billing and patient information tables. Additionally, developed REST API and Microservices using Spring Boot, tested services with Postman, and documented with Swagger, while also creating PL/SQL stored procedures, functions, and packages tailored to project and client specifications.
+          company: "IUB School Of Public Health",
+          company_url: "https://publichealth.indiana.edu/",
+          logo_path: "iubsph.png",
+          duration: "April 2022 - Present",
+          location: "Bloomington, IN",
+          description: `I designed and developed a web application for the Dean using HTML, CSS, JavaScript, PHP, Spring, React. The application allows users to perform CRUD operations on online articles and modify their display order. 
+          The application also automates the workflow of sending high-quality research articles to more than 100k readers across the country, improving the work efficiency by ~50%.
           `,
-          color: "#ee3c26",
+          color: "#990000",
         },
+        
+
+       
 
         {
           title: "Software Developer",
@@ -336,10 +314,10 @@ const experience = {
 
         {
           title: "Software Developer",
-          company: "Adani Group",
-          company_url: "https://www.adani.com/",
-          logo_path: "Adani.jpg",
-          duration: "Jun 2020 - July 2021",
+          company: "Gujarat Narmada Valley Fertiliser Company",
+          company_url: "https://www.gnfc.in/",
+          logo_path: "gnfc.png",
+          duration: "Feb 2021 - Apr 2021",
           location: "Bharuch, Gujarat, India",
           description: `I implemented search functionality for a spring application using Hibernate Search and PostgreSQL query. 
           I also improved system stability by customizing error handling and unit testing with JUnit. 
@@ -347,6 +325,8 @@ const experience = {
           `,
           color: "#ee3c26",
         },
+
+      
       ],
     },
   ],

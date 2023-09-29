@@ -35,7 +35,7 @@ function Contact(props) {
                 className="profile-pic"
                 src={require(`../../assests/images/${ContactData["profile_image_path"]}`)}
                 alt=""
-              />
+                style={{borderRadius: theme.borderRadius}} />
             </div>
             <div className="contact-heading-text-div">
               <h1

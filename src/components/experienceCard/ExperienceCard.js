@@ -10,6 +10,7 @@ function ExperienceCard(props) {
       style={{
         border: `1px solid ${experience["color"]}`,
         backgroundColor: theme.imageDark,
+        borderRadius: theme.borderRadius
       }}
     >
       <div className="experience-card-logo-div">

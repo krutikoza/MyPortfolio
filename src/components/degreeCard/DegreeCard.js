@@ -86,7 +86,7 @@ function DegreeCard(props) {
         <div {...card_body}>
           <div
             className="body-header"
-            style={{ backgroundColor: theme.accentColor }}
+            style={{ backgroundColor: theme.accentColor, borderRadius: theme.borderRadius +" " + theme.borderRadius +" " + theme.borderRadius +" " + theme.borderRadius}}
           >
             <div className="body-header-title">
               <h2 className="card-title" style={{ color: "#FFFFFF" }}>

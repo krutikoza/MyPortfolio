@@ -44,6 +44,7 @@
   height: auto;
   margin-left: 1.5rem;
   margin-top: -4rem;
+  
 }
 
 /* Media Query */
@@ -74,5 +75,6 @@
   }
   .contact-image-div {
     display: none;
+    
   }
 }

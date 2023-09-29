@@ -20,7 +20,7 @@ function ExperienceAccordion(props) {
   const [expandedVal, setExpandedVal] = useState(true);
   
   return (
-    <div className="experience-accord">
+    <div className="experience-accord" style={{borderRadius: theme.borderRadius}}>
       <ThemeProvider
         theme={theme.name === "light" ? LightTheme : DarkTheme}
         //OVERRIDES={OVERRIDES}

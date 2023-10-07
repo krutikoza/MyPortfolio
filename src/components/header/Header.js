@@ -7,8 +7,45 @@ import { CgSun } from "react-icons/cg/";
 import { HiMoon } from "react-icons/hi";
 import { style } from "glamor";
 
+
+
+import { applyTheme, hexFromArgb } from "@material/material-color-utilities";
+
+
+// import { argbFromHex, themeFromSourceColor, applyTheme, dynamicolor } from "@material/material-color-utilities";
+
+
+
+// const theme = themeFromSourceColor(argbFromHex('#f82506'), [
+//   {
+//     name: "custom-1",
+//     value: argbFromHex("#ff0000"),
+//     blend: true,
+//   },
+// ]);
+// // Print out the theme as JSON
+// console.log(JSON.stringify(theme, null, 2));
+// // Check if the user has dark mode turned on
+// const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+// // Apply the theme to the body by updating custom properties for material tokens
+// applyTheme(theme, {target: document.body, dark: systemDark});
+
+
+
+
+
+
+
+
+
+
 function Header(props) {
   const theme = props.theme;
+
+
+  
+
+
 
   const styles = style({
     cursor: "pointer",
@@ -63,13 +100,27 @@ function Header(props) {
       />
     );
 
+
+    applyTheme(theme.themeTest, {target: document.body,  dark: theme.darkMode })
+
+    if(theme.darkMode == true){
+      var materialTheme = theme.themeTest.schemes.dark.props;
+    }else{
+      var materialTheme = theme.themeTest.schemes.light.props;
+    }
+
+    console.log(materialTheme)
+  
+ 
+
+
   return (
-    <Fade top duration={800} distance="20px">
+    <Fade top duration={800} distance="20px" >
       <div>
-        <header className="header">
+        <header className="header" style={{ backgroundColor: hexFromArgb(materialTheme.surfaceVariant) }}>
           <NavLink to={link} tag={Link} className="logo">
             <span style={{ color: theme.text }}></span>
-            <span className="logo-name" style={{ color: theme.text }}>
+            <span className="logo-name" style={{ color: hexFromArgb(materialTheme.primary) }}>
               {greeting.logo_name}
             </span>
             <span style={{ color: theme.text }}></span>
@@ -85,7 +136,8 @@ function Header(props) {
                 to="/home"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 20, color: theme.text }}
+                style={{ borderRadius: 20, color: hexFromArgb(materialTheme.onSurfaceVariant)  }}
+                
               >
                 Home
               </NavLink>
@@ -96,7 +148,7 @@ function Header(props) {
                 to="/education"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 20, color: theme.text }}
+                style={{ borderRadius: 20, color: hexFromArgb(materialTheme.onSurfaceVariant) }}
               >
                 Education
               </NavLink>
@@ -107,18 +159,19 @@ function Header(props) {
                 to="/experience"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 20, color: theme.text }}
+                style={{ borderRadius: 20, color: hexFromArgb(materialTheme.onSurfaceVariant) }}
               >
                 Experiences
               </NavLink>
             </li>
+            
             <li>
               <NavLink
                 className="projects"
                 to="/projects"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 20, color: theme.text }}
+                style={{ borderRadius: 20, color: hexFromArgb(materialTheme.onSurfaceVariant) }}
               >
                 Projects
               </NavLink>
@@ -129,7 +182,7 @@ function Header(props) {
                 to="/contact"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 20, color: theme.text }}
+                style={{ borderRadius: 20, color: hexFromArgb(materialTheme.onSurfaceVariant) }}
               >
                 Contact
               </NavLink>
@@ -148,11 +201,20 @@ function Header(props) {
             <button {...styles} onClick={changeTheme}>
               {icon}
             </button>
+            
+
+
+     
+
+
           </ul>
         </header>
       </div>
     </Fade>
   );
+
+
+  
 }
 
 export default Header;

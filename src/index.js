@@ -16,7 +16,7 @@ const engine = new Styletron();
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <StyletronProvider value={engine}>
-    <BaseProvider theme={LightTheme}>
+    <BaseProvider theme={LightTheme} >
       <BrowserRouter>
         <App />
       </BrowserRouter>

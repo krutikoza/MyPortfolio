@@ -11,6 +11,8 @@
     "test": "react-scripts test"
   },
   "dependencies": {
+    "@material/material-color-utilities": "^0.2.7",
+    "@material/web": "^1.0.0",
     "baseui": "^13.0.0",
     "bootstrap": "^5.3.0",
     "fs": "0.0.1-security",
@@ -55,7 +57,6 @@
       "last 1 safari version"
     ]
   },
- 
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"

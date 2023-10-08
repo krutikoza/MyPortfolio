@@ -7,6 +7,11 @@ import FullStackImg from "./FullStackImg";
 import CloudInfraImg from "./CloudInfraImg";
 // import DesignImg from "./DesignImg";
 
+
+import { applyTheme, hexFromArgb } from "@material/material-color-utilities";
+
+
+
 function GetSkillSvg(props) {
   if (props.fileName === "FullStackImg")
     return <FullStackImg theme={props.theme} />;
@@ -17,6 +22,18 @@ function GetSkillSvg(props) {
 
 function SkillSection(props) {
   const theme = props.theme;
+
+
+
+  applyTheme(theme.themeTest, {target: document.body,  dark: theme.darkMode })
+
+  if(theme.darkMode == true){
+    var materialTheme = theme.themeTest.schemes.dark.props;
+  }else{
+    var materialTheme = theme.themeTest.schemes.light.props;
+  }
+
+
   return (
     <div>
       {skills.data.map((skill, index) => {
@@ -31,7 +48,7 @@ function SkillSection(props) {
 
               <div className="skills-text-div">
                 <Fade right duration={1000}>
-                  <h1 className="skills-heading" style={{ color: theme.text }}>
+                  <h1 className="skills-heading" style={{color: hexFromArgb(materialTheme.onSurface)}}>
                     {skill.title}
                   </h1>
                 </Fade>
@@ -44,7 +61,7 @@ function SkillSection(props) {
                       return (
                         <p
                           className="subTitle skills-text"
-                          style={{ color: theme.secondaryText }}
+                          style={{color: hexFromArgb(materialTheme.onSurface)}}
                         >
                           {skillSentence}
                         </p>
@@ -60,7 +77,7 @@ function SkillSection(props) {
             <div className="skills-main-div">
               <div className="skills-text-div">
                 <Fade left duration={1000}>
-                  <h1 className="skills-heading" style={{ color: theme.text }}>
+                  <h1 className="skills-heading" style={{color: hexFromArgb(materialTheme.onSurface)}}>
                     {skill.title}
                   </h1>
                 </Fade>
@@ -73,7 +90,7 @@ function SkillSection(props) {
                       return (
                         <p
                           className="subTitle skills-text"
-                          style={{ color: theme.secondaryText }}
+                          style={{color: hexFromArgb(materialTheme.onSurface)}}
                         >
                           {skillSentence}
                         </p>

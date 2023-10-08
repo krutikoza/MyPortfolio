@@ -1,15 +1,26 @@
 import React from "react";
 import "./ExperienceCard.css";
 
+import { applyTheme, hexFromArgb } from "@material/material-color-utilities";
+
 function ExperienceCard(props) {
   const experience = props.experience;
   const theme = props.theme;
+
+
+  if(theme.darkMode == true){
+    var materialTheme = theme.themeTest.schemes.dark.props;
+  }else{
+    var materialTheme = theme.themeTest.schemes.light.props;
+  }
+
+
   return (
     <div
       className="experience-card"
       style={{
         border: `1px solid ${experience["color"]}`,
-        backgroundColor: theme.imageDark,
+        backgroundColor: hexFromArgb(materialTheme.secondaryContainer),
         borderRadius: theme.borderRadius
       }}
     >
@@ -23,17 +34,18 @@ function ExperienceCard(props) {
       <div className="experience-card-body-div">
         <div className="experience-card-header-div">
           <div className="experience-card-heading-left">
-            <h3 className="experience-card-title" style={{ color: theme.text }}>
+            <h3 className="experience-card-title" style={{ color: hexFromArgb(materialTheme.onSecondaryContainer) }}>
               {experience["title"]}
             </h3>
             <p
               className="experience-card-company"
-              style={{ color: theme.secondaryText }}
+              style={{ color: hexFromArgb(materialTheme.onSecondaryContainer) }}
             >
               <a
                 href={experience["company_url"]}
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{ color: hexFromArgb(materialTheme.onSurfaceVariant) }}
               >
                 {experience["company"]}
               </a>
@@ -42,13 +54,13 @@ function ExperienceCard(props) {
           <div className="experience-card-heading-right">
             <p
               className="experience-card-duration"
-              style={{ color: theme.secondaryText }}
+              style={{ color: hexFromArgb(materialTheme.onSurfaceVariant) }}
             >
               {experience["duration"]}
             </p>
             <p
               className="experience-card-location"
-              style={{ color: theme.secondaryText }}
+              style={{ color: hexFromArgb(materialTheme.onSurfaceVariant) }}
             >
               {experience["location"]}
             </p>
@@ -56,7 +68,7 @@ function ExperienceCard(props) {
         </div>
         <p
           className="experience-card-description"
-          style={{ color: theme.text }}
+          style={{ color: hexFromArgb(materialTheme.onSecondaryContainer) }}
         >
           {experience["description"]}
         </p>

@@ -1,3 +1,15 @@
+import { argbFromHex, themeFromSourceColor } from "@material/material-color-utilities";
+
+
+const themeTest = themeFromSourceColor(argbFromHex('#42A5F5'));
+
+
+
+
+
+// Print out the theme as JSON
+console.log(JSON.stringify(themeTest, null, 2));
+
 // Theme Presets
 
 const lightTheme = {
@@ -15,7 +27,14 @@ const lightTheme = {
   imageClothes: "#c4bdfb",
   avatarMisc: "#b3a9fa",
   avatarShoes: "#ccd2e3",
-  borderRadius: "30px"
+  borderRadius: "30px",
+
+
+
+  themeTest,
+  darkMode:false
+
+
 };
 
 const darkTheme = {
@@ -33,7 +52,11 @@ const darkTheme = {
   imageClothes: "#000000",
   avatarMisc: "#000000",
   avatarShoes: "#2B2B2B",
-  borderRadius: "30px"
+  borderRadius: "30px",
+
+  themeTest,
+  darkMode:true
+  
 };
 
 export const themes = { light: lightTheme, dark: darkTheme };

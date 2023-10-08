@@ -1,10 +1,11 @@
 .contact-main {
   width: 100%;
+  /* min-height: 100vh; */
 }
 
 .basic-contact {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .contact-heading-div {
@@ -158,6 +159,8 @@
     font-size: 50px;
     margin-top: 40px;
   }
+
+  
 }
 
 @media (max-width: 768px) {
@@ -216,5 +219,10 @@
     margin-right: 0px;
     line-height: normal;
     text-align: center;
+  }
+
+  .basic-contact {
+    margin-left: 0;
+    margin-right: 0;
   }
 }

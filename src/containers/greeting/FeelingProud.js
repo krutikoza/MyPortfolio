@@ -1,8 +1,19 @@
 import React from "react";
 import "./FeelingProud.css";
 
+import {hexFromArgb } from "@material/material-color-utilities";
+
 function FeelingProud(props) {
   const theme = props.theme;
+
+
+  if(theme.darkMode == true){
+    var materialTheme = theme.themeTest.schemes.dark.props;
+  }else{
+    var materialTheme = theme.themeTest.schemes.light.props;
+  }
+
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -142,7 +153,7 @@ function FeelingProud(props) {
       <path
         d="M307.55,235.53374s56.40567,11.51136,70.21931-6.90682,19.56931,51.80113,19.56931,51.80113l6.90682,73.67272-10.36023,40.28977s-54.1034,43.74318-71.37044,47.19658-43.74318,5.75569-43.74318,5.75569,8.058-127.77613,8.058-130.0784S307.55,235.53374,307.55,235.53374Z"
         transform="translate(-244.40605 -115.15866)"
-        fill={theme.accentColor}
+        fill={hexFromArgb(materialTheme.primary)}
       />
       <path
         d="M324.70433,213.94456s-12.54979-7.18923-16.0032-.28241S273.01591,237.836,269.5625,237.836s6.90682,95.54431,2.30227,107.05567S245.38864,440.436,258.05114,447.34281s3.45341-6.90682,16.11591,10.36022,74.82385,17.267,78.27726,10.36023-27.62727-58.708-21.87159-107.05567,14.96477-115.11362,6.90682-124.32271S324.70433,213.94456,324.70433,213.94456Z"
@@ -192,7 +203,7 @@ function FeelingProud(props) {
           y="176.36275"
           width="29.75235"
           height="7.1626"
-          fill={theme.accentColor}
+          fill={hexFromArgb(materialTheme.primary)}
         />
         <rect
           id="b9a0b375-cc2a-4c59-8850-661af54e4f62"
@@ -201,7 +212,7 @@ function FeelingProud(props) {
           y="176.36275"
           width="10.46842"
           height="7.1626"
-          fill={theme.accentColor}
+          fill={hexFromArgb(materialTheme.primary)}
         />
         <rect
           id="e174c2ab-9bc5-41ec-b37c-b06fbf8a9878"
@@ -210,7 +221,7 @@ function FeelingProud(props) {
           y="176.36275"
           width="10.46842"
           height="7.1626"
-          fill={theme.accentColor}
+          fill={hexFromArgb(materialTheme.primary)}
         />
         <rect
           id="ba2479ac-4c7d-43b4-a028-73b1e20e4002"
@@ -219,7 +230,7 @@ function FeelingProud(props) {
           y="176.36275"
           width="71.07506"
           height="7.1626"
-          fill={theme.accentColor}
+          fill={hexFromArgb(materialTheme.primary)}
         />
         <rect
           id="ac60ef86-00f2-480b-8171-28b6fdfc1958"
@@ -228,7 +239,7 @@ function FeelingProud(props) {
           y="222.6442"
           width="29.75235"
           height="7.1626"
-          fill={theme.accentColor}
+          fill={hexFromArgb(materialTheme.primary)}
         />
         <rect
           id="b3d8298d-cd65-487a-8b19-4cee946356e7"
@@ -237,7 +248,7 @@ function FeelingProud(props) {
           y="222.6442"
           width="10.46842"
           height="7.1626"
-          fill={theme.accentColor}
+          fill={hexFromArgb(materialTheme.primary)}
         />
         <rect
           id="ed27f15f-f0c4-4569-8330-a6688f8e356c"
@@ -246,7 +257,7 @@ function FeelingProud(props) {
           y="222.6442"
           width="10.46842"
           height="7.1626"
-          fill={theme.accentColor}
+          fill={hexFromArgb(materialTheme.primary)}
         />
         <rect
           id="f685c005-adaf-4d60-acda-005b037d82a6"
@@ -255,7 +266,7 @@ function FeelingProud(props) {
           y="222.6442"
           width="71.07506"
           height="7.1626"
-          fill={theme.accentColor}
+          fill={hexFromArgb(materialTheme.primary)}
         />
         <rect
           id="eca7c7fc-83f8-48ca-a588-6606db47af3f"
@@ -264,7 +275,7 @@ function FeelingProud(props) {
           y="192.34088"
           width="29.75235"
           height="7.1626"
-          fill={theme.accentColor}
+          fill={hexFromArgb(materialTheme.primary)}
         />
         <rect
           id="a71b5b2f-f8b9-481d-a301-5e3357e5fe42"
@@ -273,7 +284,7 @@ function FeelingProud(props) {
           y="192.34088"
           width="29.75235"
           height="7.1626"
-          fill={theme.accentColor}
+          fill={hexFromArgb(materialTheme.primary)}
         />
         <rect
           id="abb3a25a-f854-41fc-8391-e6ad9fbe2417"
@@ -282,7 +293,7 @@ function FeelingProud(props) {
           y="192.34088"
           width="10.46842"
           height="7.1626"
-          fill={theme.accentColor}
+          fill={hexFromArgb(materialTheme.primary)}
         />
         <rect
           id="add2b425-b775-4eb5-9c25-8c4c14f957c9"
@@ -291,7 +302,7 @@ function FeelingProud(props) {
           y="192.34088"
           width="10.46842"
           height="7.1626"
-          fill={theme.accentColor}
+          fill={hexFromArgb(materialTheme.primary)}
         />
         <rect
           id="b7159612-3b84-4b0b-a885-612eaab04c06"
@@ -300,7 +311,7 @@ function FeelingProud(props) {
           y="192.34088"
           width="71.07506"
           height="7.1626"
-          fill={theme.accentColor}
+          fill={hexFromArgb(materialTheme.primary)}
         />
         <rect
           id="edfc7301-4de5-47dc-80e2-1ae2da982d6d"
@@ -309,7 +320,7 @@ function FeelingProud(props) {
           y="207.76802"
           width="29.75235"
           height="7.1626"
-          fill={theme.accentColor}
+          fill={hexFromArgb(materialTheme.primary)}
         />
         <rect
           id="e1009f91-6275-4375-80fa-0d778e331fdc"
@@ -318,7 +329,7 @@ function FeelingProud(props) {
           y="207.76802"
           width="29.75235"
           height="7.1626"
-          fill={theme.accentColor}
+          fill={hexFromArgb(materialTheme.primary)}
         />
         <rect
           id="a060fb9f-1f1a-4862-9a69-16dd49199e18"
@@ -327,7 +338,7 @@ function FeelingProud(props) {
           y="207.76802"
           width="10.46842"
           height="7.1626"
-          fill={theme.accentColor}
+          fill={hexFromArgb(materialTheme.primary)}
         />
         <rect
           id="b6754d5f-104f-449c-b9a9-cf9ac82bf5fe"
@@ -336,7 +347,7 @@ function FeelingProud(props) {
           y="207.76802"
           width="10.46842"
           height="7.1626"
-          fill={theme.accentColor}
+          fill={hexFromArgb(materialTheme.primary)}
         />
         <rect
           id="e6ed1ccd-2cfd-450f-a339-07df3a1ee6bb"
@@ -345,7 +356,7 @@ function FeelingProud(props) {
           y="207.76802"
           width="71.07506"
           height="7.1626"
-          fill={theme.accentColor}
+          fill={hexFromArgb(materialTheme.primary)}
         />
       </g>
     </svg>

@@ -3,9 +3,15 @@
   text-align: center;
 }
 
+.projectContent{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
 .basic-projects {
   margin-left: 5%;
   margin-right: 5%;
+  padding-top: 40px;
 }
 
 .projects-heading-div {
@@ -78,6 +84,11 @@
   .projects-heading-text {
     font-size: 30px;
     margin-top: 20px;
+  }
+
+  .projectContent{
+    margin-left: 0%;
+    margin-right: 0%;
   }
 
   .projects-heading-sub-text {

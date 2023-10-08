@@ -3,8 +3,15 @@
 }
 
 .basic-education {
-  margin-left: 5%;
-  margin-right: 5%;
+ 
+  padding-top: 30px;
+  padding-bottom: 50px;
+
+  margin-left: 30px;
+  margin-right: 30px;
+
+  
+
 }
 
 .heading-div {
@@ -67,4 +74,10 @@
   .heading-div {
     flex-direction: column;
   }
+
+  .basic-education {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  
 }

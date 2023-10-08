@@ -1,7 +1,7 @@
 import { argbFromHex, themeFromSourceColor } from "@material/material-color-utilities";
 
 
-const themeTest = themeFromSourceColor(argbFromHex('#00a837'));
+const themeTest = themeFromSourceColor(argbFromHex('#42A5F5'));
 
 
 

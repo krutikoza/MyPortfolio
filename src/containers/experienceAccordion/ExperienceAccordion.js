@@ -3,6 +3,9 @@ import ExperienceCard from "../../components/experienceCard/ExperienceCard.js";
 import "./ExperienceAccordion.css";
 import { Accordion, Panel } from "baseui/accordion";
 import { DarkTheme, LightTheme, ThemeProvider } from "baseui";
+
+import { applyTheme, hexFromArgb } from "@material/material-color-utilities";
+
 // import { CgBorderAll } from "react-icons/cg";
 
 // const OVERRIDES = {
@@ -18,27 +21,57 @@ function ExperienceAccordion(props) {
   const theme = props.theme;
 
   const [expandedVal, setExpandedVal] = useState(true);
+
+  if(theme.darkMode == true){
+    var materialTheme = theme.themeTest.schemes.dark.props;
+  }else{
+    var materialTheme = theme.themeTest.schemes.light.props;
+  }
+
+
+  const [isHovered, setIsHovered] = useState(false);
+  
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+  
   
   return (
-    <div className="experience-accord" style={{borderRadius: theme.borderRadius}}>
+    <div className="experience-accord"
+     style={{
+      borderRadius: theme.borderRadius, 
+      border:`1px solid ${hexFromArgb(materialTheme.outline)}`,
+      boxShadow: `${isHovered ? "0px 0px 30px 5px"+hexFromArgb(materialTheme.primary) : "0px 0px 5px 2px"+hexFromArgb(materialTheme.primary)}`
+    }}
+
+    onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+     >
+
       <ThemeProvider
         theme={theme.name === "light" ? LightTheme : DarkTheme}
         //OVERRIDES={OVERRIDES}
       >
         <Accordion
-           expanded={true}
-          onChange={({ expanded }) => {console.log(expanded); }}
+           
+          // onChange={({ expanded }) => {console.log(expanded); }}
         
           overrides={{
             
             Header: {
               style: ({ $theme }) => ({
-                borderRadius: theme.borderRadius
+                borderRadius: theme.borderRadius,
+                backgroundColor: hexFromArgb(materialTheme.surface)
               })
             },
             Content: {
               style: ({ $theme }) => ({
-                borderRadius: theme.borderRadius
+                borderRadius: theme.borderRadius,
+                backgroundColor: hexFromArgb(materialTheme.surface)
               })
             },
             PanelContainer: {
@@ -57,8 +90,7 @@ function ExperienceAccordion(props) {
                 className="accord-panel"
                 title={section["title"]}
                 key={section["title"]}
-                
-                
+                expanded={true}
               >
                 <>
 

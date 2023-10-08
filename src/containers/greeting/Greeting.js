@@ -34,18 +34,18 @@ export default function Greeting(props) {
 
   
 
-  const styles = style({
-    backgroundColor: `${theme.accentBright}`,
-    ":hover": {
-      boxShadow: `0 5px 5px ${theme.accentBright}`,
-    },
+  // const styles = style({
+  //   backgroundColor: `${theme.accentBright}`,
+  //   ":hover": {
+  //     boxShadow: `0 5px 5px ${theme.accentBright}`,
+  //   },
     
     
-  });
+  // });
 
   return (
     <Fade bottom duration={800} distance="40px">
-      <div className="greet-main" id="greeting">
+      <div className="greet-main" id="greeting" > 
         <div className="greeting-main">
           <div className="greeting-text-div">
             <div>

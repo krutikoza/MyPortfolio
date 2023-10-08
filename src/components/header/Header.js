@@ -11,6 +11,8 @@ import { style } from "glamor";
 
 import { applyTheme, hexFromArgb } from "@material/material-color-utilities";
 
+import { SketchPicker } from 'react-color';
+
 
 // import { argbFromHex, themeFromSourceColor, applyTheme, dynamicolor } from "@material/material-color-utilities";
 
@@ -66,6 +68,7 @@ function Header(props) {
         props.theme.name === "light" ? "#646464" : "#FFFFFF"
       }`,
     },
+
   });
 
   const link = settings.isSplash ? "/splash" : "home";
@@ -117,9 +120,9 @@ function Header(props) {
   return (
     <Fade top duration={800} distance="20px" >
       <div>
-        <header className="header" style={{ backgroundColor: hexFromArgb(materialTheme.surfaceVariant) }}>
+        <header className="header" style={{ backgroundColor: hexFromArgb(materialTheme.surfaceVariant), borderRadius:"0px" }}>
           <NavLink to={link} tag={Link} className="logo">
-            <span style={{ color: theme.text }}></span>
+            <span style={{ color: hexFromArgb(materialTheme.onSurfaceVariant) }}></span>
             <span className="logo-name" style={{ color: hexFromArgb(materialTheme.primary) }}>
               {greeting.logo_name}
             </span>
@@ -129,7 +132,7 @@ function Header(props) {
           <label className="menu-icon" htmlFor="menu-btn">
             <span className="navicon"></span>
           </label>
-          <ul className="menu">
+          <ul className="menu" >
             <li>
               <NavLink
                 className="homei"
@@ -201,6 +204,8 @@ function Header(props) {
             <button {...styles} onClick={changeTheme}>
               {icon}
             </button>
+
+            {/* <SketchPicker /> */}
             
 
 

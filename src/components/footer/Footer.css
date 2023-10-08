@@ -5,6 +5,11 @@
   font-family: "Google Sans Regular";
 }
 
-/* .footer-div {
-  margin-top: 2rem;
-} */
+.footer-div {
+  /* margin-top: 2rem; */
+
+  text-align: center;
+  padding: 10px;
+  
+  
+}

@@ -19,7 +19,7 @@ export default function Footer(props) {
 
 
   return (
-    <div className="footer-div" style = {{backgroundColor: hexFromArgb(materialTheme.surfaceVariant) , borderRadius: "0px", padding: "10px", textAlign:"center"}}>
+    <div className="footer-div" style = {{backgroundColor: hexFromArgb(materialTheme.surfaceVariant) , borderRadius:"0px"}}>
       <Fade>
         <p className="footer-text" style={{ color: hexFromArgb(materialTheme.onSurfaceVariant) }}>
           Made with <span role="img">❤️</span> by {greeting.title2}

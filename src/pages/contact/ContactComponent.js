@@ -8,6 +8,11 @@ import "./ContactComponent.css";
 import { greeting, contactPageData } from "../../portfolio.js";
 import { style } from "glamor";
 
+import '@material/web/button/filled-button.js';
+
+import { applyTheme, hexFromArgb } from "@material/material-color-utilities";
+
+
 const ContactData = contactPageData.contactSection;
 // const blogSection = contactPageData.blogSection;
 
@@ -24,10 +29,19 @@ function Contact(props) {
 
   );
 
+
+  applyTheme(theme.themeTest, {target: document.body,  dark: theme.darkMode })
+
+  if(theme.darkMode == true){
+    var materialTheme = theme.themeTest.schemes.dark.props;
+  }else{
+    var materialTheme = theme.themeTest.schemes.light.props;
+  }
+
   return (
-    <div className="contact-main">
+    <div className="contact-main" style={{backgroundColor: hexFromArgb(materialTheme.surfaceVariant)}}>
       <Header theme={theme} setTheme={props.setTheme} />
-      <div className="basic-contact">
+      <div className="basic-contact" style={{backgroundColor: hexFromArgb(materialTheme.surface), borderRadius: "30px"}}>
         <Fade bottom duration={800} distance="40px">
           <div className="contact-heading-div">
             <div className="contact-heading-img-div">
@@ -40,21 +54,21 @@ function Contact(props) {
             <div className="contact-heading-text-div">
               <h1
                 className="contact-heading-text"
-                style={{ color: theme.text }}
+                style={{ color: hexFromArgb(materialTheme.onSurface) }}
               >
                 {ContactData["title"]}
               </h1>
               <p
                 className="contact-header-detail-text subTitle"
-                style={{ color: theme.secondaryText }}
+                style={{ color: hexFromArgb(materialTheme.onSurfaceVariant) }}
               >
                 {ContactData["description"]}
               </p>
               <SocialMedia />
               <br />
               <br />
-              <a
-                {...styles}
+              <md-filled-button
+                // {...styles}
                 className="general-btn"
                 href={greeting.resumeLink}
                 target="_blank"
@@ -62,7 +76,7 @@ function Contact(props) {
                 style={{borderRadius:"100px"}}
               >
                 My Resume
-              </a>
+              </md-filled-button>
             </div>
           </div>
         </Fade>

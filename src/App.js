@@ -2,19 +2,23 @@ import React, { useState } from "react";
 import "./App.css";
 import Main from "./containers/Main";
 import { ThemeProvider } from "styled-components";
-import { themes } from "./theme";
+import ThemeComponent from "./theme";
 import { GlobalStyles } from "./global";
 import AnimatedCursor from "react-animated-cursor";
 import { settings } from "./portfolio";
 // import ReactGA from "react-ga";
+
 
 function App() {
   
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
   const useCursor = settings.useCustomCursor;
 
+  const themes = ThemeComponent();
+  
+  
   return (
-    <ThemeProvider theme={themes[theme]}>
+    <ThemeProvider theme={theme == "dark"? themes.darkTheme : themes.lightTheme}>
       <>
         <GlobalStyles />
         <div>
@@ -28,10 +32,10 @@ function App() {
                 innerScale={0.6}
                 outerScale={0}
               />
-              <Main theme={themes[theme]} setTheme={setTheme} />
+              <Main theme={theme == "dark"? themes.darkTheme : themes.lightTheme} setTheme={setTheme} setThemeColor={themes.setThemeColor}/>
             </>
           ) : (
-            <Main theme={themes[theme]} setTheme={setTheme} />
+            <Main theme={theme == "dark"? themes.darkTheme : themes.lightTheme} setTheme={setTheme} setThemeColor={themes.setThemeColor}/>
           )}
         </div>
       </>

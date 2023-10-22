@@ -21,7 +21,7 @@ function Experience(props) {
   
   return (
     <div className="experience-main" style={{backgroundColor: hexFromArgb(materialTheme.surfaceVariant), minHeight: "100vh"}}>
-      <Header theme={theme} setTheme={props.setTheme} />
+      <Header theme={theme} setTheme={props.setTheme} setThemeColor={props.setThemeColor}/>
       <div className="experience-content" style={{backgroundColor: hexFromArgb(materialTheme.surface), borderRadius: "30px"}}>
         <div className="basic-experience" >
           <Fade bottom duration={800} distance="40px" >

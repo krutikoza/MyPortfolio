@@ -49,7 +49,7 @@
 }
 
 .header .menu {
-  margin-top: 10px;
+  padding-top: 15px;
   clear: both;
   max-height: 0;
   transition: max-height 0.2s ease-out;

@@ -22,7 +22,7 @@ function Education(props) {
 
   return (
     <div className="education-main" style={{backgroundColor: hexFromArgb(materialTheme.surfaceVariant)}}>
-      <Header theme={props.theme} setTheme={props.setTheme} />
+      <Header theme={props.theme} setTheme={props.setTheme} setThemeColor={props.setThemeColor}/>
       <div className="basic-education" style={{backgroundColor: hexFromArgb(materialTheme.surface), borderRadius: "30px"}}>
         <Fade bottom duration={800} distance="40px">
           <div className="heading-div">

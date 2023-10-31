@@ -63,3 +63,17 @@ body {
       transform 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
   }
 }
+
+
+
+/* ::-webkit-scrollbar-track {
+  background: #a8afc4;
+}
+::-webkit-scrollbar-thumb {
+  background: #1717a1;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b8bbd3;
+} */
+

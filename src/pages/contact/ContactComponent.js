@@ -39,8 +39,8 @@ function Contact(props) {
   }
 
   return (
-    <div className="contact-main" style={{backgroundColor: hexFromArgb(materialTheme.surfaceVariant)}}>
-      <Header theme={theme} setTheme={props.setTheme} />
+    <div className="contact-main" style={{backgroundColor: hexFromArgb(materialTheme.secondaryContainer)}}>
+      <Header theme={theme} setTheme={props.setTheme} setThemeColor={props.setThemeColor}/>
       <div className="basic-contact" style={{backgroundColor: hexFromArgb(materialTheme.surface), borderRadius: "30px"}}>
         <Fade bottom duration={800} distance="40px">
           <div className="contact-heading-div">

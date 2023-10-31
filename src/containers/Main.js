@@ -24,6 +24,7 @@ export default function Main(propss) {
                   {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
+                  setThemeColor={propss.setThemeColor}
                 />
               }
             />
@@ -34,6 +35,7 @@ export default function Main(propss) {
                   {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
+                  setThemeColor={propss.setThemeColor}
                 />
               }
             />
@@ -45,6 +47,7 @@ export default function Main(propss) {
                   {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
+                  setThemeColor={propss.setThemeColor}
                 />
               }
             />
@@ -55,6 +58,7 @@ export default function Main(propss) {
                   {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
+                  setThemeColor={propss.setThemeColor}
                 />
               }
             />
@@ -65,6 +69,7 @@ export default function Main(propss) {
                   {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
+                  setThemeColor={propss.setThemeColor}
                 />
               }
             />
@@ -75,6 +80,7 @@ export default function Main(propss) {
                   {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
+                  setThemeColor={propss.setThemeColor}
                 />
               }
             />
@@ -85,6 +91,7 @@ export default function Main(propss) {
                   {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
+                  setThemeColor={propss.setThemeColor}
                 />
               }
             />
@@ -105,6 +112,7 @@ export default function Main(propss) {
                   {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
+                  setThemeColor={propss.setThemeColor}
                 />
               }
             />
@@ -115,6 +123,7 @@ export default function Main(propss) {
                   {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
+                  setThemeColor={propss.setThemeColor}
                 />
               }
             />
@@ -126,6 +135,7 @@ export default function Main(propss) {
                   {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
+                  setThemeColor={propss.setThemeColor}
                 />
               }
             />
@@ -136,6 +146,7 @@ export default function Main(propss) {
                   {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
+                  setThemeColor={propss.setThemeColor}
                 />
               }
             />
@@ -146,6 +157,7 @@ export default function Main(propss) {
                   {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
+                  setThemeColor={propss.setThemeColor}
                 />
               }
             />
@@ -156,6 +168,7 @@ export default function Main(propss) {
                   {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
+                  setThemeColor={propss.setThemeColor}
                 />
               }
             />

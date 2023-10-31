@@ -1,18 +1,32 @@
-import { argbFromHex, themeFromSourceColor } from "@material/material-color-utilities";
+import { argbFromHex, themeFromSourceColor, MaterialDynamicColors } from "@material/material-color-utilities";
+
+import { TonalPalette } from '@material/material-color-utilities';
+// import { useState } from "react";
+import React, { useState } from "react";
 
 
-const themeTest = themeFromSourceColor(argbFromHex('#42A5F5'));
+
+
+const ThemeComponent = () => {
+
+const [themeColor, setThemeColor] = useState(localStorage.getItem("accentColor") || "#03F0D4")
+
+// localStorage.setItem("accentColor",themeColor)
+
+
+
+const themeTest = themeFromSourceColor(argbFromHex(themeColor));
 
 
 
 
-
+// console.log(TonalPalette())
 // Print out the theme as JSON
 console.log(JSON.stringify(themeTest, null, 2));
 
 // Theme Presets
 
-const lightTheme = {
+var lightTheme = {
   name: "light",
   body: "#FFFFFF",
   text: "#343434",
@@ -37,7 +51,7 @@ const lightTheme = {
 
 };
 
-const darkTheme = {
+var darkTheme = {
   name: "dark",
   body: "#1D1D1D",
   text: "#FFFFFF",
@@ -59,4 +73,14 @@ const darkTheme = {
   
 };
 
-export const themes = { light: lightTheme, dark: darkTheme };
+  const themes = { lightTheme, darkTheme, setThemeColor };
+  return themes;
+
+}
+
+// export const themes = { light: MyComponent, dark: MyComponent.darkTheme };
+
+export default ThemeComponent;
+
+
+

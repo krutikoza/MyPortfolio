@@ -31,8 +31,8 @@ function Projects(props) {
   });
 
   return (
-    <div className="projects-main" style={{backgroundColor: hexFromArgb(materialTheme.surfaceVariant)}}>
-      <Header theme={theme} setTheme={props.setTheme} />
+    <div className="projects-main" style={{backgroundColor: hexFromArgb(materialTheme.secondaryContainer)}}>
+      <Header theme={theme} setTheme={props.setTheme} setThemeColor={props.setThemeColor}/>
       <div className="projectContent" style={{backgroundColor: hexFromArgb(materialTheme.surface), borderRadius: "30px"}}>
         <div className="basic-projects" >
           <Fade bottom duration={800} distance="40px">

@@ -58,16 +58,16 @@ body {
   width: 10px;
   height: 10px;
 }
-/* ::-webkit-scrollbar-track {
-  background: #a8afc4;
+::-webkit-scrollbar-track {
+  background: #2c2c2c;
 }
 ::-webkit-scrollbar-thumb {
-  background: #d0d0d4;
+  background: #919191;
   border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #b8bbd3;
-} */
+  background: #000000;
+}
 
 
 

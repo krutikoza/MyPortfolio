@@ -64,27 +64,31 @@ function Header(props) {
   
 
 
-  // const styles = style({
-  //   cursor: "pointer",
-  //   height: "45px",
-  //   width: "45px",
-  //   marginRight: "5px",
-  //   marginLeft: "15px",
-  //   paddingTop: "5px",
-  //   borderRadius: "50%",
-  //   border: "none",
-  //   alignItems: "center",
-  //   justifyContent: "center",
-  //   backgroundColor: props.theme.name === "light" ? "#000000" : "#FFFFFF",
-  //   outline: "none",
-  //   transition: "all 0.2s ease-in-out",
-  //   ":hover": {
-  //     boxShadow: `0 0px 10px ${
-  //       props.theme.name === "light" ? "#646464" : "#FFFFFF"
-  //     }`,
-  //   },
+  const styles = style({
+    // cursor: "pointer",
+    // height: "45px",
+    // width: "45px",
+    // marginRight: "5px",
+    // marginLeft: "15px",
+    // paddingTop: "5px",
+    // borderRadius: "50%",
+    // border: "none",
+    // alignItems: "center",
+    // justifyContent: "center",
+    // backgroundColor: props.theme.name === "light" ? "#000000" : "#FFFFFF",
+    // outline: "none",
+    // transition: "all 0.2s ease-in-out",
+    // ":hover": {
+    //   boxShadow: `0 0px 10px ${
+    //     props.theme.name === "light" ? "#646464" : "#FFFFFF"
+    //   }`,
+    // },
 
-  // });
+
+
+   
+
+  });
 
   const link = settings.isSplash ? "/splash" : "home";
 
@@ -143,7 +147,7 @@ function Header(props) {
 
   return (
 
-    <Fade top duration={800} distance="20px" >
+    <Fade top duration={800} distance="20px">
 
     
 
@@ -196,11 +200,12 @@ function Header(props) {
                   {props.theme.name == "dark"?
                   <md-switch 
                     selected
-
-                  onClick={changeTheme}></md-switch>: 
+                    icons
+                  onClick={changeTheme}></md-switch>
+                  : 
                   <md-switch 
                   unselected 
-                  
+                  icons
                   onClick={changeTheme}></md-switch>
                 }
 
@@ -231,10 +236,10 @@ function Header(props) {
 
         
         
-        <header className="header" style={{ backgroundColor: hexFromArgb(materialTheme.surfaceVariant), borderRadius:"0px" }}>
+        <header className="header" style={{ backgroundColor: hexFromArgb(materialTheme.secondaryContainer), borderRadius:"0px" }}>
           <NavLink to={link} tag={Link} className="logo">
             <span style={{ color: hexFromArgb(materialTheme.onSurfaceVariant) }}></span>
-            <span className="logo-name" style={{ color: hexFromArgb(materialTheme.primary) }}>
+            <span className="logo-name" style={{ color: hexFromArgb(materialTheme.onSecondaryContainer) }}>
               {greeting.logo_name}
             </span>
             <span style={{ color: theme.text }}></span>

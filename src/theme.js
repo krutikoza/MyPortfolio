@@ -1,4 +1,6 @@
-import { argbFromHex, themeFromSourceColor } from "@material/material-color-utilities";
+import { argbFromHex, themeFromSourceColor, MaterialDynamicColors } from "@material/material-color-utilities";
+
+import { TonalPalette } from '@material/material-color-utilities';
 // import { useState } from "react";
 import React, { useState } from "react";
 
@@ -18,9 +20,9 @@ const themeTest = themeFromSourceColor(argbFromHex(themeColor));
 
 
 
-
+// console.log(TonalPalette())
 // Print out the theme as JSON
-// console.log(JSON.stringify(themeTest, null, 2));
+console.log(JSON.stringify(themeTest, null, 2));
 
 // Theme Presets
 

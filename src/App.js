@@ -8,6 +8,8 @@ import AnimatedCursor from "react-animated-cursor";
 import { settings } from "./portfolio";
 // import ReactGA from "react-ga";
 
+const scrollbar = document.querySelector('::-webkit-scrollbar');
+
 
 function App() {
   
@@ -15,6 +17,17 @@ function App() {
   const useCursor = settings.useCustomCursor;
 
   const themes = ThemeComponent();
+
+  if (scrollbar) {
+    // Set the element's style
+    scrollbar.style.color = 'red';
+  } else {
+    // Handle the error
+    console.error('The element #my-element does not exist.');
+  }
+  
+  
+
   
   
   return (

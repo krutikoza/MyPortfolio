@@ -8,13 +8,9 @@ import { HiMoon } from "react-icons/hi";
 
 import {MdOutlineColorLens} from "react-icons/md"
 
-import { style } from "glamor";
-
-
 
 import { applyTheme, hexFromArgb } from "@material/material-color-utilities";
 
-// import { SketchPicker } from 'react-color';
 
 import ThemeComponent from "../../theme";
 
@@ -37,15 +33,10 @@ import '@material/web/iconbutton/icon-button.js';
 
 import '@material/web/switch/switch.js';
 
-import { Slider, Sketch, Material, Colorful, Compact, Circle, Wheel, Block, Github, Chrome } from '@uiw/react-color';
-import { Alpha, Hue, ShadeSlider, Saturation, Interactive, hsvaToHslaString } from '@uiw/react-color';
-import { EditableInput, EditableInputRGBA, EditableInputHSLA } from '@uiw/react-color';
+import { Sketch } from '@uiw/react-color';
 
 
 
-// import { argbFromHex, themeFromSourceColor, applyTheme, dynamicolor } from "@material/material-color-utilities";
-
-import { argbFromHex, themeFromSourceColor } from "@material/material-color-utilities";
 
 
 
@@ -64,31 +55,6 @@ function Header(props) {
   
 
 
-  const styles = style({
-    // cursor: "pointer",
-    // height: "45px",
-    // width: "45px",
-    // marginRight: "5px",
-    // marginLeft: "15px",
-    // paddingTop: "5px",
-    // borderRadius: "50%",
-    // border: "none",
-    // alignItems: "center",
-    // justifyContent: "center",
-    // backgroundColor: props.theme.name === "light" ? "#000000" : "#FFFFFF",
-    // outline: "none",
-    // transition: "all 0.2s ease-in-out",
-    // ":hover": {
-    //   boxShadow: `0 0px 10px ${
-    //     props.theme.name === "light" ? "#646464" : "#FFFFFF"
-    //   }`,
-    // },
-
-
-
-   
-
-  });
 
   const link = settings.isSplash ? "/splash" : "home";
 
